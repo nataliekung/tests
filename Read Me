@@ -1,0 +1,24 @@
+Instruction to run it:
+In mac OS
+1. Unzip Dialpad.zip.
+2. In OS terminal, go to the folder of unziped folder Dialpad. For example if Dialpad folder is in the ~/Desktop/Dialpad.
+cd ~/Desktop/Dialpad
+3. Compile java file.
+javac LotteryPick.java
+4. Run the class which contains main function.
+java LotteryPick
+5. The terminal will display Done, and in the Dialpad folder an output file output.txt has been generated.
+
+To add new test case: add a array in a line, start with [ and end with ], each items are quoted with double quotes, and separated by comma.
+For example ["12345", "65437658", "876564352334"]
+
+Input and output files
+Input : input.txt
+Output : output.txt
+
+
+Source file :
+LotteryPick.java
+
+
+
