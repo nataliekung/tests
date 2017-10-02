@@ -1,0 +1,35 @@
+Instruction to run it:
+In mac OS
+1. Unzip Intercom.zip.
+2. In OS terminal, go to the folder of unziped folder Intercom. For example if Intercom folder is in the ~/Desktop/Intercom.
+cd ~/Desktop/Intercom
+3. Compile two java files.
+javac Customer.java CustomerInvitation.java
+4. Run the class which contains main function.
+java CustomerInvitation
+5. The terminal will display Done, and in the Intercom folder an output file customers_to_be_invited.txt has been generated.
+
+
+Input and output files
+Input : customers.txt
+Output : customers_to_be_invited.txt
+
+
+Source file :
+Customer.java
+CustomerInvitation.java
+
+
+The introduction the program:
+This program will take a JSONs file with all available customers' information, then output customers that located within
+100km of the office.
+Two classes:
+- Customer Class
+Defines the attributes of customer, customer has 4 attributes: user_id, name, latitude, longitude
+- CustomerInvitation Class
+Main step:
+1. getCloseCustomers function to get closest customers within 100km. Within this function:
+2. loadFile function, which will regular expression to parse the JSON file, and return a list of available Customer objects.
+3. getDistance function to filter out the customers located within 100km
+4. sortCustomerById function to sort the the list of lucky customers and output into customers_to_be_invited.text.
+
